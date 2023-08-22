@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FlyoutPageSample"
+             x:Class="FlyoutPageSample.FlyoutMenuPage"
+             Title="FlyoutMenuPage">
+    <CollectionView x:Name="collectionView"
+                    x:FieldModifier="public"
+                    SelectionMode="Single">
+        <CollectionView.ItemsSource>
+            <x:Array Type="{x:Type local:FlyoutPageItem}">
+                <local:FlyoutPageItem Title="Contacts"
+                                      IconSource="contacts.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="TodoList"
+                                      IconSource="todo.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 1"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 2"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 3"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 4"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 5"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 6"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 7"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 8"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 9"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 10"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 11"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 12"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 13"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 14"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 15"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 16"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 17"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 18"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 19"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 20"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 21"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 22"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 23"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+                <local:FlyoutPageItem Title="Reminders 24"
+                                      IconSource="reminders.png"
+                                      TargetType="{x:Type local:MainPage}" />
+            </x:Array>
+        </CollectionView.ItemsSource>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid Padding="5,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="{Binding IconSource}" />
+                    <Label Grid.Column="1"
+                           Margin="20,0"
+                           Text="{Binding Title}"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>
